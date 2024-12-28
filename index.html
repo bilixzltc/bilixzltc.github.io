@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小张Cortana的个人主页</title>
+ 
+    <link rel="shortcut icon" href="miku.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header class="core hd">
+        <!-- 时间 -->
+        <h1 class="time_econd"></span></h1>
+        <h3><span class="time_moon"></span>&nbsp;&nbsp;<span id="clock"></span>&#128513;</h3>
+        <!-- 搜索栏 -->
+        <div class="xf_baidu xf_style">
+            <form action="http://www.baidu.com/baidu" target="_blank">
+                <i></i>
+                <input type="text" name="word" size="30" autocomplete="off" placeholder="百度一下">
+                <input type="submit">
+            </form>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <section class="core main xf_style">
+        <!-- 头像 -->
+        <div class="tx">
+            <!-- 可以换成自己的 -->
+            <img src="miku.png" alt="" title="">
+        </div>
+        <!-- 姓名 个签 -->
+        <div class="xf_name">
+            <h2>小张Cortana</h2>
+            <h4 id="xf_txt">快乐自在</h4>
+        </div>
+        <!-- 图标 （img里面的是透明图是用来转换超链接） -->
+        <div class="xf_ico_link">
+            <ul>
+                <li><a href="https://github.com/bilixzltc" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                    alt="" title="github"></a></li>
+                <li><a href="https://res.abeim.cn/api/qq/?qq=692788842" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                    alt="" title="QQ"></a></li>
+                <li><a href="mailto:xzltccor@outlook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                    alt="" title="mail"></a></li>
+                <li><a href="https://space.bilibili.com/3493111961487572?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                    alt="" title="bilibili"></a></li>
+            </ul>
+        </div>
+        <!-- 介绍 -->
+        <div class="xf_introduce">
+            <p id="xf_type">你好，我是小张Cortana</p>
+        </div>
+        <!-- 滑动效果 -->
+
+            
+  
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="core copy">
+        <p>Copyright © 2024 <a href="#" target="_blank" rel="noopener noreferrer">小张Cortana</a> 版权所有</p>
+        <p class="footer2">备案号：<a target="_blank" href="http://icp.huangda.fun">酷ICP备00003号</a></p><p><a 
+        
+    </footer>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".xf_slide").click(function () {
+                $(".xf_website").slideToggle("slow");
+            })
+        })
+    </script>
+    <script src="./assets/js/time.js"></script>
+    <script src="./assets/js/text.js"></script>
+    <!-- 配置播放器 -->
+<div id="xf-MusicPlayer" data-cdnName="https://player.xfyun.club/js"></div>
+
+<!-- 引入外部CDN插件 -->
+<script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
+
+</body>
+
+</html>
