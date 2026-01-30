@@ -3,7 +3,7 @@
 let divTyping = document.getElementById('xf_type')
 let i = 0,
     timer = 0,
-    str = '这里是小张Cortana，一个xxs~ 这个xxs能熟练掌握面向macos、Windows和Linux的开关机、PPT的保存、图标的删除、Arduino和各种零件的购买和损坏，生命不息，折腾不止！' //text
+    str = '这里是虚镜式，一个xxs~ 这个xxs能熟练掌握面向macos、Windows和Linux的开关机、PPT的保存、图标的删除、Arduino和各种零件的购买和损坏，生命不息，折腾不止！' //text
 function typing() {
     if (i <= str.length) {
         divTyping.innerHTML = str.slice(0, i++) + '_'

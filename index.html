@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小张Cortana的个人主页</title>
+    <title>虚镜式的个人主页</title>
  
     <link rel="shortcut icon" href="miku.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/font.css">
@@ -14,6 +13,20 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+    <style>
+        /* 修复透明图片链接不可点击的问题 */
+        .xf_ico_link img {
+            width: 30px; /* 设置具体尺寸 */
+            height: 30px;
+            opacity: 0.1; /* 让透明图片稍微可见以便点击 */
+        }
+        
+        /* 或者完全移除透明图片，直接使用链接 */
+        .xf_ico_link a {
+            display: inline-block;
+            padding: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,9 +38,15 @@
         <h3><span class="time_moon"></span>&nbsp;&nbsp;<span id="clock"></span>&#128513;</h3>
         <!-- 搜索栏 -->
         <div class="xf_baidu xf_style">
-            <form action="http://www.baidu.com/baidu" target="_blank">
+            <form action="https://cn.bing.com/search" target="_blank">
                 <i></i>
-                <input type="text" name="word" size="30" autocomplete="off" placeholder="百度一下">
+                <input type="text" name="q" size="30" autocomplete="off" placeholder="Bing">
+                <input type="hidden" name="form" value="QBLH">
+                <input type="hidden" name="sp" value="-1">
+                <input type="hidden" name="lq" value="0">
+                <input type="hidden" name="sc" value="12-4">
+                <input type="hidden" name="qs" value="n">
+                <input type="hidden" name="sk" value="">
                 <input type="submit">
             </form>
         </div>
@@ -41,25 +60,29 @@
         </div>
         <!-- 姓名 个签 -->
         <div class="xf_name">
-            <h2>小张Cortana</h2>
+            <h2>虚镜式</h2>
             <h4 id="xf_txt">快乐自在</h4>
         </div>
-        <!-- 图标 （img里面的是透明图是用来转换超链接） -->
+        <!-- 图标 （修复透明图片链接问题） -->
         <div class="xf_ico_link">
             <ul>
-                <li><a href="https://github.com/bilixzltc" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
-                    alt="" title="github"></a></li>
-                <li><a href="https://res.abeim.cn/api/qq/?qq=692788842" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
-                    alt="" title="QQ"></a></li>
-                <li><a href="mailto:xzltccor@outlook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
-                    alt="" title="mail"></a></li>
-                <li><a href="https://space.bilibili.com/3493111961487572?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
-                    alt="" title="bilibili"></a></li>
+                <li><a href="https://github.com/bilixzltc" target="_blank" rel="noopener noreferrer" title="github">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==" alt="github" style="width:20px;height:20px;">
+                </a></li>
+                <li><a href="https://im.qq.com" target="_blank" rel="noopener noreferrer" title="QQ官网">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==" alt="QQ" style="width:20px;height:20px;">
+                </a></li>
+                <li><a href="mailto:official@xzcortana.cn" target="_blank" rel="noopener noreferrer" title="mail">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==" alt="mail" style="width:20px;height:20px;">
+                </a></li>
+                <li><a href="https://space.bilibili.com/3546925993298191" target="_blank" rel="noopener noreferrer" title="bilibili">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==" alt="bilibili" style="width:20px;height:20px;">
+                </a></li>
             </ul>
         </div>
         <!-- 介绍 -->
         <div class="xf_introduce">
-            <p id="xf_type">你好，我是小张Cortana</p>
+            <p id="xf_type">你好，我是虚镜式</p>
         </div>
         <!-- 滑动效果 -->
 
@@ -69,7 +92,7 @@
     </section>
     <!-- 底部 -->
     <footer class="core copy">
-        <p>Copyright © 2024 <a href="#" target="_blank" rel="noopener noreferrer">小张Cortana</a> 版权所有</p>
+        <p>Copyright © 2024-2026 <a href="#" target="_blank" rel="noopener noreferrer">虚镜式</a> 版权所有</p>
         
     </footer>
     
